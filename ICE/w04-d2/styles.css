@@ -1,0 +1,39 @@
+body {
+    background-color:#6D9FD2;
+    text-align: center;
+    padding: 0 35%;
+}
+
+img {
+    width: 65%;
+    margin: 0, auto;
+}
+
+.title {
+ color:white;
+}
+
+ol {
+    margin: 10px auto;
+    display: inline;
+    text-emphasis: bold;
+}
+
+li {
+    margin: 10px auto;
+    text-align: left;
+    text-emphasis: bold;
+}
+
+.bigQuote {
+    font-size:x-large;
+    color:white;
+}
+
+h1.title {
+    font-family: Tahoma;
+}
+
+h1:hover {
+    color:black;
+}
