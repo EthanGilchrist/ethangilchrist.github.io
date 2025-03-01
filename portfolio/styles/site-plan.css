@@ -16,14 +16,14 @@ Fonts are separated by a | */
 
   /* TODO: Week07 - change the values below to your chosen font(s). */
   /* TODO: Week07 - make sure you provide more than one font option for each to handle fallback */
-  --heading-font: Courier, sans-serif;
-  --paragraph-font: Consolas, sans-serif;
+  --heading-font: Courier, Calibri, sans-serif;
+  --paragraph-font: Consolas, Cambria, sans-serif;
 
   /* TODO: Week07 - these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #6868B3; /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
+  --headline-color-on-color: black; /* headlines on a colored background */
   --paragraph-color-on-white: #6868B3; /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-color-on-color: black; /* paragraph text on a colored background */
   --paragraph-background-color: #98C1D9;
   --nav-link-color: #272D2D;
   --nav-background-color: #23CE6B;
