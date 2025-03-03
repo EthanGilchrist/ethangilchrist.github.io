@@ -147,6 +147,11 @@ In New Super Mario Bros Wii, there are "toad houses" that you can get powerups f
       <!-- TODO: Week 08 - change this -->
       <h3>Minecraft Redstone Circuits</h3>
       <p>I also started learning more advanced concepts through Minecraft. The redstone in Minecraft has been known for over a decade now to be Turing complete, and several people have designed CPUs out of it. For my part, in high school I made a binary adder, and around my freshman year of college I added subtraction, and then a single digit 7-segment display hexadecimal output made of redstone lamps. I also learned to master the in-game command system, which uses JSON formatting to allow the player to perform tasks usually reserved for the game's internal code. I still don't fully understand what JSON is and when I told my dad about this he said that didn't make sense because JSON isn't a programming language. So in case you find that as confusing as my dad does, the best explanation I can offer is that I think JSON is used to contain the arguments for the function that you want to execute, and then the game's engine interprets that data as an executable command. But, having never encountered JSON outside of Minecraft, I still don't understand it's normal function. One day I hope to implement multiplication and long division as well, but I haven't tested my ideas about how they would work.</p>
+      <p>The foundation of redstone circuitry is the redstone torch. Redstone dust acts like a wire, and a torch serves as a 2nd-law-of-thermodynamics-defying infinite power source, which can be disabled by running a current into the block supporting it. 
+        This functionality effectively makes it a NOT gate. Redstone repeaters function as repeaters, diodes, and to add delay. Power comes in the back and is emitted at full strength out the front. Powering either side of a repeater locks its state, causing it to continue emitting whatever signal it was when the side became powered, and ignoring the input signal, making it a sort of memory cell. 
+        Using these three components, two repeaters can connect two "wires" without allowing the current to flow upstream to create an OR gate, which can then be fed into a redstone torch to create a NOR gate. A configuration of three torches and a piece of redstone dust can create and AND gate, and more complex redstone components allow for the creation of XOR gates, T-Flip Flops, and various latches. 
+        These can be chained together in mostly the same way they are in real life to create more elaborate circuitry.
+      </p>
       <p>Images for the Page 2</p>
       <img src="images/fox.png"
         alt="A 7-segment display in Minecraft">
@@ -159,6 +164,25 @@ In New Super Mario Bros Wii, there are "toad houses" that you can get powerups f
         <!-- TODO: Week 08 - change this -->
         After graduating high school, I began studying at BYU-I in January of 2020 before those studies were interrupted by COVID-19, cancer, and my mission. Before I served my mission, though, my dad said he wanted the board game Risk for Christmas, and when I realized that Risk doesn't have any features that are particularly difficult to code, I decided to make it from scratch in Visual Studio. It remains as the project I am most proud of thus far.
       </p>
+      <p>
+        The only problem with this is that Risk is still a popular game, with other, professionally made digital versions, so I don't dare to publish my version online, for fear of copyright infringement. I got the map from the Wikipedia article about Risk, which is an SVG file, which meant I never had to worry about resolution, which was great. The sound effects are also not original, after trying to find copyright-free sound effects online and getting frustrated with how long it took to find what I was looking for, I realized I could rip sound effects from Minecraft's assets folder, because I already know what all of those sounds sound like.
+      </p>
+      <p>
+        As for the actual programming of the game, the only part that I didn't write myself is a function to detect whether an arbitrary point is inside of an arbitrary polygon, because the Territory objects I use are not rectangles. They can have any number of sides greater than two, and they are not necessarily convex, which makes the math substantially more complicated. In fact, it turns out this problem has it's own Wikipedia article: <a href="https://en.wikipedia.org/wiki/Point_in_polygon" target="_blank">Point in Polygon Problem</a>. 
+        I did, however, write all of the game's logic myself, and the biggest hurdle that I didn't see coming is that I wanted to make the color of a territory lighter to indicate when it was selected by the player. I wasn't satisfied with how it looked if I used Color.LightBlue as the light version of Color.Blue, and so on, and so all six of the lighter versions of the colors have hand-picked RGB values. That really opened my eyes to the invisible world of good design. (I say "good", because when design is poor, you see it.)
+      </p>
+      <p>
+        Another thing that is easy for human intuition to take for granted is how all the territories connect to each other. When we look at the board, we deduce which territories can attack which territories without even thinking about it, because it uses good design. I, however, had to write a hundred or so lines of code just to initialize the board so that every territory would know which territories were connected to it. 
+        It gets even worse when you want to fortify at the end of your turn, because then you have to know whether the player controls a valid pathway between the two territories they just selected, which effectively forced me to write a maze-solving algorithm. It didn't have to be efficient, but I think my code could handle a custom map unless it was deliberately <a href="https://en.wikipedia.org/wiki/Pathological_(mathematics)" target="_blank">pathological</a>.
+      </p>
+      <p>
+        In total, I wrote about 2,000 lines of code. I don't think any of my other projects come close to that total. I would check, but I've lost access to a lot of what I've written. I'm pretty satisfied with how the game runs currently, but three problems (that I know of) remain.
+      </p>
+      <ol>
+        <li>The resolution of the game is fixed. Attempting to resize the window completely breaks the graphics.</li>
+        <li>I never implemented territory cards. Territory cards are important for preventing stalemates in the late-game.</li>
+        <li>The sounds are inconsistent; sometimes they just don't play. Unfortunately, I don't know what causes this problem or how to fix it.</li>
+      </ol>
       <p>Images for the Page 3</p>
       <img src="images/hawk.png"
         alt="My Risk game">
