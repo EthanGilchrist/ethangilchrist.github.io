@@ -246,6 +246,8 @@ nav a:hover {
     align-self: center;
 }
 
+
+
 /* Subpage Start! */
 
 .river-main {
@@ -283,6 +285,15 @@ nav a:hover {
     justify-self: center;
     border: 10px solid #283618;
     border-radius: 20px;
+}
+
+
+
+/* Contact Us Start! */
+
+.contactus-main {
+    height:420px;
+    margin-left:40px;
 }
 
 @media screen and (max-width: 900px) {
