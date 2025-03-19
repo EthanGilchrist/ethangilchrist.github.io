@@ -1,0 +1,130 @@
+/*@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");*/
+
+:root {
+  --primary-color: #98C1D9;
+  --secondary-color: #6868B3;
+  --accent1-color: #23CE6B;
+  --accent2-color: #272D2D;
+  --brown-color: #82735C;
+
+  /* TODO: Week07 - change the values below to your chosen font(s). */
+  /* TODO: Week07 - make sure you provide more than one font option for each to handle fallback */
+  --heading-font: Courier, Calibri, sans-serif;
+  --paragraph-font: Consolas, Cambria, sans-serif;
+
+  --headline-color-on-white: #6868B3;
+  --headline-color-on-color: black;
+  --paragraph-color-on-white: #6868B3;
+  --paragraph-color-on-color: black;
+  --paragraph-background-color: #98C1D9;
+  --nav-link-color: #272D2D;
+  --nav-background-color: #23CE6B;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #98c1d9;
+  /* TODO: Week07 - test out your colors using by viewing your html and interacting with it.
+   * - Make sure the contrast is enough that things can be easily read (i.e. https://coolors.co/contrast-checker/)
+   */
+}
+
+/*  Look around below...CHANGE ANYTHING! */
+
+body {
+  max-width: 1201px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
