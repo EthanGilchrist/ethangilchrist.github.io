@@ -54,11 +54,12 @@ h2 {
 header {
   padding: 1em;
   text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
+  color: black;
+  background-color: #98C1D9;
   display: grid;
   grid-template-columns: 150px 1fr;
   background-color: #23CE6B;
+  border-radius: 13px;
 }
 header nav {
   display: grid;
@@ -69,6 +70,10 @@ header nav a {
   border: 13px solid #23CE6B;
   border-radius: 23px;
   transition: 0.15s;
+}
+
+#welcome-text {
+  margin-top: 80px;
 }
 
 p {
@@ -97,6 +102,7 @@ p {
 
 #logo_link img {
   width: 120px;
+  border-radius: 6px;
 }
 
 h1 {
@@ -106,9 +112,9 @@ h1 {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
-  border: 13px solid #272D2D;
-  border-radius: 23px;
+  padding: 50px;
+  border: 25px solid #272D2D;
+  border-radius: 13px;
 }
 
 nav {
@@ -124,11 +130,11 @@ nav a {
 
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color);
+  color: #272D2D;
 }
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+nav a:hover{
+  color: white;
+  background-color: #98C1D9;
 }
 
 .text-block {
@@ -140,14 +146,49 @@ footer {
   background-color: #23CE6B;
   border-radius: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px;
+  grid-template-columns: 280px 180px 180px 1fr;
+  padding: 20px;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 100px 100px;
+  margin-left: 100px;
+}
+
+#fb-link {
+  grid-column: 2/3;
+}
+
+#li-link {
+  grid-column: 3/4;
 }
 
 footer p {
   background-color: #23CE6B;
 }
 
+footer p a {
+  color:#272D2D;
+  text-decoration: none;
+}
+
+.footer-hoverable {
+  background-color: #23CE6B;
+  text-align: center;
+  padding: 0;
+  align-content: center;
+}
+
+.footer-hoverable a:hover {
+  color:white;
+  background-color: #98C1D9;
+  border-radius: 13px;
+}
+.footer-hoverable a {
+  padding: 20px;
+  transition: 0.15s;
+}
 
 
 
@@ -165,7 +206,7 @@ footer p {
 
 #main-gallery-title {
   width: 500px;
-  margin-top: 250px;
+  margin-top: 450px;
   margin-bottom: 60px;
 }
 
