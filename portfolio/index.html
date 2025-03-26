@@ -131,6 +131,10 @@
     <img src="images/wolf.png" style="width:100%" alt="Decoder" class="gallery-img">
   </div>
 
+  <div class="mySlides2 crop">
+    <img src="images/falcon.png" style="width:100%" alt="Finished Adder & Subtracter" class="gallery-img">
+  </div>
+
   <!-- <div class="mySlides2">
     <img src="images/bat.png" style="width:100%" alt="lorem ipsum">
   </div> -->
@@ -156,24 +160,17 @@
   <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
 </div>
 
-
-<!-- Trigger the Modal 
-<img id="myImg" src="images/portfolioLogo.png" alt="test" style="width:100%;max-width:300px"> -->
-
-<!-- The Modal -->
+<!-- Modal (the thing when you click on an image) -->
 <div id="myModal" class="modal">
-
-  <!-- The Close Button -->
   <span class="close">&times;</span>
 
-  <!-- Modal Content (The Image) -->
+  <!-- start with a placeholder image -->
   <img class="modal-content" id="img01" src="images/portfolioLogo.png" alt="test">
 
-  <!-- Modal Caption (Image Text) -->
   <div id="caption"></div>
 </div>
 
-
+<!-- to-do: copy the updated HTML into the subpages -->
 <footer>
   <p>&copy; 2025 - Ethan Gilchrist</p>
   <p class="footer-hoverable"><a class="footer-link" href="site-plan.html">Site Plan</a></p>
@@ -189,7 +186,8 @@
 </footer>
 </div>
 
-
+<!-- blink and you'll miss it: this is the return to top button -->
+<button onclick="topFunction()" id="return-to-top-button" title="Go to top">Top</button>
 
 <script>
     let slideIndex = [1,1,1];
@@ -243,6 +241,31 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+}
+</script>
+
+
+
+
+<script>
+  // Button time
+let mybutton = document.getElementById("return-to-top-button");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari (cringe)
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>
 </body>
