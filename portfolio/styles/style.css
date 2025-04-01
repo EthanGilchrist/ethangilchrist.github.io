@@ -94,6 +94,7 @@ p {
   border: 13px solid #23CE6B;
   border-radius: 23px;
   width: 70%;
+  max-width: 750px;
 }
 
 #logo_link {
@@ -140,6 +141,7 @@ nav a:hover{
 .text-block {
   border: 13px solid #23CE6B;
   border-radius: 13px;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -188,6 +190,26 @@ footer p a {
 .footer-hoverable a {
   padding: 20px;
   transition: 0.15s;
+}
+
+#further-reading {
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.reading-hoverable {
+  margin-top: 10px;
+}
+
+.reading-hoverable a:hover {
+  color:white;
+  background-color: #98C1D9;
+  border-radius: 13px;
+}
+.reading-hoverable a {
+  padding: 10px;
+  transition: 0.15s;
+  text-decoration: none;
 }
 
 

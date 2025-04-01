@@ -21,7 +21,8 @@
         </header>
         <main>
         <h1>Redstone Projects</h1>
-        <h3>Introduction</h3>
+        <div class="text-block">
+        <h3 class="paragraph-title">Introduction</h3>
         <p>
             If you've never heard of Minecraft, I'm impressed. Also, this page won't make a lot of sense. 
             The most important thing to understand is that Minecraft is a sandbox game, almost like 
@@ -35,7 +36,10 @@
             feasible to translate a traditional circuit diagram into a redstone circuit in 
             a more 1:1 way, and vice versa.
         </p>
-        <h3>How Redstone Works</h3>
+        </div>
+        <img src="images/I_give_up_on_the_animal_names_thing.png" alt="Redstone in action" class="main-image">
+        <div class="text-block">
+        <h3 class="paragraph-title">How Redstone Works</h3>
         <p>
             The foundation of redstone circuitry is the redstone torch. Redstone dust acts like a wire, 
             and a torch serves as a 2nd-law-of-thermodynamics-defying infinite power source, which can 
@@ -49,9 +53,13 @@
             to create a NOR gate. A configuration of three torches and a piece of redstone dust can create 
             and AND gate, and more complex redstone components allow for the creation of XOR gates, 
             T-Flip Flops, and various latches. These can be chained together in mostly the same way they 
-            are in real life to create more elaborate circuitry.
+            are in real life to create more elaborate circuitry. Pictured below are two AND gates. The top one 
+            is receiving an input of one 1 and one 0, and the bottom one has both inputs set to 1.
         </p>
-        <h3>My Binary Adder/Subtracter</h3>
+        </div>
+        <img src="images/and_gates.png" alt="Two AND gates" class="main-image">
+        <div class="text-block">
+        <h3 class="paragraph-title">My Binary Adder/Subtracter</h3>
         <p>
             After taking a course on digital logic, I decided use what I had learned to implement a 
             binary adder with a 7-segment display in Minecraft. I used well-known designs for redstone 
@@ -66,27 +74,37 @@
         <p>
             Having lost the original world file, I recently decided to try again to refresh my skills 
             and see if I could improve on my original design. I was able to create a new adder that 
-            was somewhat faster, with a more elegant decoder design, shown below.
+            was somewhat faster, with a more elegant decoder design, shown below. Just for you, I 
+            made a polished interface that makes it easier to understand what the inputs are doing.
         </p>
-        <img src="images/fox.png" alt="My 7-segment display and the signal bus feeding it.">
-        <img src="images/wolf.png" alt="An example of a decoder">
-        <h3>Further Reading</h3>
-        <a href="https://minecraft.wiki/w/Redstone_circuits">Minecraft Wiki - Redstone Circuits</a>
-        <a href="https://minecraft.wiki/w/Tutorial:Redstone_computers">Minecraft Wiki - Redstone Computers</a>
+        </div>
+        <img src="images/fox.png" alt="My 7-segment display and the signal bus feeding it." class="main-image">
+        <img src="images/wolf.png" alt="An example of a decoder" class="main-image">
+        <img src="images/falcon.png" alt="The polished interface" class="main-image">
+        
+        <div class="text-block" id="further-reading">
+        <h3 class="paragraph-title">Further Reading</h3>
+        <p class="reading-hoverable">
+        <a href="https://minecraft.wiki/w/Redstone_circuits" class="footer-link" target="_blank">Minecraft Wiki - Redstone Circuits</a>
+        </p>
+        <p class="reading-hoverable">
+        <a href="https://minecraft.wiki/w/Tutorial:Redstone_computers" class="footer-link" target="_blank">Minecraft Wiki - Redstone Computers</a>
+        </p>
+        </div>
         </main>
         <footer>
             <p>&copy; 2025 - Ethan Gilchrist</p>
-            <p><a class="footer-link" href="site-plan.html">Site Plan</a></p>
-            <p><a class="footer-link" href="../index.html">About Me</a></p>
+            <p class="footer-hoverable"><a class="footer-link" href="site-plan.html">Site Plan</a></p>
+            <p class="footer-hoverable"><a class="footer-link" href="../index.html">About Me</a></p>
             <div class="social">
-                <a href="https://www.facebook.com/profile.php?id=100087264934929" target="_blank" class="icon">
-                    <img src="images/facebook.png" alt="Facebook icon">
-                </a>
-                <a href="https://www.linkedin.com/in/ethan-gilchrist-937383349/" target="_blank" class="icon">
-                    <img src="images/linkedin_logo.png" alt="LinkedIn icon">
-                </a>
+              <a href="https://www.facebook.com/profile.php?id=100087264934929" target="_blank" class="icon" id="fb-link">
+                <img src="images/facebook.png" alt="Facebook icon">
+              </a>
+              <a href="https://www.linkedin.com/in/ethan-gilchrist-937383349/" target="_blank" class="icon" id="li-link">
+                <img src="images/linkedin_logo.png" alt="LinkedIn icon">
+              </a>
             </div>
-        </footer>
+          </footer>
     </div>
 </body>
 </html>
