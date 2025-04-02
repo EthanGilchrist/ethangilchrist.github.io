@@ -187,3 +187,13 @@ nav a:hover {
 .wireframe {
   max-width: 750px;
 }
+
+#oldWireframe {
+  width: 5%;
+  transition: width 60s linear;
+  max-width: none;
+}
+
+#oldWireframe:hover {
+  width: 60%;
+}
