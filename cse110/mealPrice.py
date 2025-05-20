@@ -1,0 +1,17 @@
+cPrice = float(input("What is the price of a child's meal? "))
+aPrice = float(input("What is the price of an adult's meal? "))
+children = int(input("How many children are there? "))
+adults = int(input("How many adults are there? "))
+taxRate = float(input("What is the sales tax rate? ")) / 100
+tipRate = float(input("How much would you like to tip? ")) / 100
+subtotal = round(children * cPrice + adults * aPrice, 2)
+print("\nSubtotal: $" + str(subtotal))
+tax = round(taxRate * subtotal, 2)
+print("Sales Tax: $" + str(tax))
+total = round(subtotal + tax, 2)
+tip = round(total * tipRate, 2)
+total = round(total + tip, 2)
+print("Tip: $" + str(tip))
+print("Total: $" + str(total))
+payment = float(input("\nWhat is the payment amount? "))
+print("Change: $" + str(round(payment - total, 2)))

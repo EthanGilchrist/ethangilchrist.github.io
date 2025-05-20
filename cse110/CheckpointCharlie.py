@@ -1,0 +1,7 @@
+age = int(input("How old are you? "))
+print("On your next birthday, you will be " + str(age + 1))
+eggs = int(input("\nHow many egg cartons do you have? "))
+print("You have " + str(eggs * 12) + " eggs\n")
+cookies = int(input("How many cookies do you have? "))
+people = int(input("How many people are there? "))
+print("Each person may have " + str(cookies / people) + " cookies")

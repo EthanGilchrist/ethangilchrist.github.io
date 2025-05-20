@@ -1,0 +1,7 @@
+squareLength = float(input("What is the length of a side of a square? "))
+print("The area of the square is: " + str(squareLength * squareLength))
+length = float(input("What is the length of rectangle? "))
+width = float(input("What is the width of the rectangle? "))
+print("The area of the rectangle is: " + str(length * width))
+radius = float(input("What is the radius of the circle? "))
+print("The area of the circle is: " + str(3.14 * radius * radius))
