@@ -154,16 +154,20 @@ footer {
 
 .social {
   display: grid;
-  grid-template-columns: 1fr 100px 100px;
+  grid-template-columns: 1fr 100px 100px 100px;
   margin-left: 100px;
 }
 
-#fb-link {
+#gh-link {
   grid-column: 2/3;
 }
 
-#li-link {
+#fb-link {
   grid-column: 3/4;
+}
+
+#li-link {
+  grid-column: 4/5;
 }
 
 footer p {
