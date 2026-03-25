@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Gilchrist's Personal Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="../wwr/styles/style.css"> -->
+</head>
+<body>
+<div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="./images/portfolioLogo.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="redstone.html">Redstone Projects</a>
+            <a href="risk.html">Risk Project</a>
+            <a href="../resume.docx">My Resume</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="welcome-text">Welcome to my webpage!</h1>
+        <!-- this has been snipped out, of course
+        <h2>To the Brother Bagley and/or TA to whom it may concern</h2>
+        <p>
+            I'm planning on adding more content than what I currently have, but I don't have time right now, 
+            so although this isn't the finished state of the HTML, I hope it is an adequate one. 
+            Also, I don't know how to do the gallery thing on the main page that I had in my site plan, 
+            I'm probably going to need your help with that one in class.
+        </p> -->
+        <div class="text-block">
+        <h3 class="paragraph-title">Introduction</h3>
+        <p>I am, as of March 2025, a sophomore at BYU-I majoring in Computer Science. 
+            This website is the final project for my Web Fundamentals (WDD 130) class. 
+            I decided it would be great for this to be of use outside of class, so I decided to create a 
+            portfolio, almost like an interactive resume, but slightly more fun and moderately less formal. 
+            What follows is pretty much a big long list of things I have done with computers. 
+        </p>
+        <h3 class="paragraph-title">Early Beginnings</h3>
+        <p>
+            In New Super Mario Bros Wii, there are "toad houses" that you can get powerups from. These 
+            work kind of like Concentration but without the memory component. You start with a 6x3 
+            grid, not knowing what's on the back of any of the panels. If you match two powerups, you 
+            win one. If you match the cards with Bowser or Bowser Jr's face on them, the game ends. 
+            Unlike concentration, once a card is flipped, it stays flipped. At age 10, I reasoned that 
+            the layouts of these toad houses might not be randomly generated, so I started writing down 
+            the locations of every single panel that I flipped over. The result of this was that my dad 
+            published my research on a subpage of his website, <a href="https://jumpingfishes.com/poweruppanels">https://jumpingfishes.com/poweruppanels</a>. 
+            He had to fill in gaps and errors in my research with existing online resources, but this 
+            story still shows how much experience I have had working with and thinking about computers, 
+            even from a young age. Even at age 10, I was able to form a hypothesis about how a computer worked, 
+            test it, and leverage my findings to my advantage.
+        </p>
+      </div>
+        <img src="images/toad.png" alt="A screenshot of the website my dad made for me." class="main-image">
+        <div class="text-block">
+        <h3 class="paragraph-title">TI-83</h3>
+        <p>
+            In Junior High, a friend of mine programmed his TI-83 graphing calculator to play a 
+            "guess the number" game. I thought that that was so cool, and I wanted to learn how to do 
+            it myself. If I recall correctly, my calculator (we were all required to own the same 
+            model due to Texas Instruments' monopoly) came with an owner's manual, which included 
+            instructions for how to program it. So, I taught myself BASIC, which was pretty easy 
+            because the entire point of the language is to be easy to learn, hence the name, and 
+            eventually figured out how to replicate my friend's program, and even make my own changes 
+            to it. Later on, in high school, I would program Snake on it, which was far more difficult, 
+            and far more rewarding.
+        </p>
+        <p>I don't have that TI-83 with me anymore, but here is an image for reference if you've never seen Snake before.</p>
+      </div>
+        <img src="images/snake.png" alt="Google's snake game" class="main-image">
+        <div class="text-block">
+        <h3 class="paragraph-title">High School</h3>
+        <p>I finally started my formal education in programming in high school. For our second semester, 
+            we were given a large, long-term group project in which we implemented an old game called Hunt 
+            the Wumpus. My progress was slow for a very long time, until one day, the concept of what a Class 
+            in C# was finally clicked in my head, and I was able to start making real progress. Our teacher 
+            told us one day as we were getting close to the deadline that he would keep the classroom open 
+            after school, so we could work with our teams for as long as we needed, and we got to work. We 
+            made steady progress for probably about eight hours until my teacher said he would not be able 
+            to fulfill his promise of keeping the classroom open as long as we needed, because he didn't 
+            think we would stay that long, and the school's security system was about to arm itself for the 
+            night. So we had to leave, and I was very disappointed that I had to go. And then it hit me. I 
+            had been at school doing work for well over 12 hours at that point, and I was sad to stop 
+            working on my project? That was when I decided that programming was something I could do for a 
+            career. As a personal note, our versions of Hunt the Wumpus actually rendered the map, unlike 
+            most of the playable versions I've found online. It was also unique in that we used a 
+            hexagonal map, which prevented us from using the simple geometry of a square grid.
+        </p>
+        <p>Once again, I no longer have access to our original project, but this picture 
+            is very close to how our game worked.
+        </p>
+      </div>
+        <img src="images/bat.png" alt="Hunt the Wumpus" class="main-image">
+    </main>
+
+
+
+
+
+
+    <!-- first gallery -->
+<h2 class="gallery-title" id="main-gallery-title">Gallery</h2>
+<h3 class="gallery-title">General</h3>
+<div class="slideshow-container">
+  <div class="mySlides1 crop">
+    <img src="images/bat.png" style="width:100%" alt="Hunt the Wumpus" class="gallery-img">
+  </div>
+
+  <div class="mySlides1 crop">
+    <img src="images/toad.png" style="width:100%" alt="Power Up Panels" class="gallery-img">
+  </div>
+
+  <div class="mySlides1 crop">
+    <img src="images/snake.png" style="width:100%" alt="Google's Snake Game" class="gallery-img">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<h3 class="gallery-title">Redstone</h3>
+<div class="slideshow-container">
+  <div class="mySlides2 crop">
+    <img src="images/fox.png" style="width:100%" alt="7-segment display" class="gallery-img">
+  </div>
+
+  <div class="mySlides2 crop">
+    <img src="images/wolf.png" style="width:100%" alt="Decoder" class="gallery-img">
+  </div>
+
+  <div class="mySlides2 crop">
+    <img src="images/falcon.png" style="width:100%" alt="Finished Adder & Subtracter" class="gallery-img">
+  </div>
+
+  <div class="mySlides2 crop">
+    <img src="images/I_give_up_on_the_animal_names_thing.png" style="width:100%" alt="Finished Adder & Subtracter" class="gallery-img">
+  </div>
+
+  <div class="mySlides2 crop">
+    <img src="images/and_gates.png" style="width:100%" alt="Finished Adder & Subtracter" class="gallery-img">
+  </div>
+
+  <!-- <div class="mySlides2">
+    <img src="images/bat.png" style="width:100%" alt="lorem ipsum">
+  </div> -->
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<h3 class="gallery-title">Risk</h3>
+<div class="slideshow-container">
+  <div class="mySlides3 crop">
+    <img src="images/hawk.png" style="width:100%" alt="Risk game" class="gallery-img">
+  </div>
+
+  <div class="mySlides3 crop">
+    <img src="images/dove.png" style="width:100%" alt="Risk source code" class="gallery-img">
+  </div>
+
+  <!-- <div class="mySlides3">
+    <img src="images/bat.png" style="width:100%" alt="lorem ipsum">
+  </div> -->
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+<!-- Modal (the thing when you click on an image) -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+
+  <!-- start with a placeholder image -->
+  <img class="modal-content" id="img01" src="images/portfolioLogo.png" alt="test">
+
+  <div id="caption"></div>
+</div>
+
+<!-- to-do: copy the updated HTML into the subpages -->
+<footer>
+  <p>&copy; 2025 - Ethan Gilchrist</p>
+  <p class="footer-hoverable"><a class="footer-link" href="site-plan.html">Site Plan</a></p>
+  <p class="footer-hoverable"><a class="footer-link" href="../index.html">About Me</a></p>
+  <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=100087264934929" target="_blank" class="icon" id="fb-link">
+      <img src="images/facebook.png" alt="Facebook icon">
+    </a>
+    <a href="https://www.linkedin.com/in/ethan-gilchrist-937383349/" target="_blank" class="icon" id="li-link">
+      <img src="images/linkedin_logo.png" alt="LinkedIn icon">
+    </a>
+  </div>
+</footer>
+</div>
+
+<!-- blink and you'll miss it: this is the return to top button -->
+<button onclick="topFunction()" id="return-to-top-button" title="Go to top">Top</button>
+
+<script>
+    let slideIndex = [1,1,1];
+    let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "flex";  
+    }
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+// var img = document.getElementById("myImg");
+let imgs = document.getElementsByClassName("gallery-img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+console.log(imgs);
+for (let i = 0; i < imgs.length; i++) {
+  imgs[i].onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+};
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+
+
+<script>
+  // Button time
+let mybutton = document.getElementById("return-to-top-button");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari (cringe)
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+</body>
+</html>
